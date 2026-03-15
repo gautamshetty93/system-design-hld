@@ -17,3 +17,10 @@ Different stages of microservices :
 6. Observability -> Monitoring
 
 These are all the different patterns for microservices.
+
+## Decomposition Pattern
+This pattern depends on how services are defined into multiple micro services based on the business requirement. Each part of business is made as a new service.
+
+## STRANGLER Pattern
+We have a controller and old legacy system. Old API traffic comes to controller, then we create few service to created different service, which is newly created microservices. Similarly we redirect the small services and redirect the traffic as times goes on. 
+We slowly reduce traffic to the legacy system and increase traffic to new microservice. This is kind of slowly strangling the monolith and moving to microservice.
