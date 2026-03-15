@@ -24,3 +24,22 @@ This pattern depends on how services are defined into multiple micro services ba
 ## STRANGLER Pattern
 We have a controller and old legacy system. Old API traffic comes to controller, then we create few service to created different service, which is newly created microservices. Similarly we redirect the small services and redirect the traffic as times goes on. 
 We slowly reduce traffic to the legacy system and increase traffic to new microservice. This is kind of slowly strangling the monolith and moving to microservice.
+
+## Data Management in Microservice
+1. Database for each individual service->Each microservice has its own DB.
+2. Shared database->Different services has single database. It is easier to join for different services, also it is easy to maintain transactions.
+But drawback in this is :
+ - we would not be able to scale for an individual service
+ - Columns would not be able to delete shared cells, it needs to think of other services also.
+
+## SAGA Design pattern
+When each service have its own DB, then it is very difficult to handle transactions. When some transaction fails then its hard to roll back commits in other DBs. SAGA pattern comes into picture to resolve this.
+SAGA uses events to co-ordinate between different services and its DBs.
+It uses 2 different approaches to solve this :
+1. Choreography -> Each service send their operation to choreographer queue(like an event queue) and other services listens to it and proceeds with their operation.
+2. Orchestrator -> It performs operation by giving turn to each service and if it fails then goes back to previous services to rollback.
+
+## CQRS (Command Query Request Segregation)
+Design pattern separates the operations for reading data from those for writing data into distinct models
+Commands: These are operations that change the state of the application (Create, Update, Delete). Commands are task-based, focus on business logic and validation, and do not return data.
+Queries: These are operations that read the state of the application. Queries return data transfer objects (DTOs) and can use simple models to avoid complex mapping and improve speed.
