@@ -1,0 +1,48 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw-jetbrains-plugin",
+  "elements": [
+    {
+      "id": "FWAxDJGs3RjWB93_xUfoF",
+      "type": "text",
+      "x": 230,
+      "y": 111,
+      "width": 1218.7587890625,
+      "height": 275,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 230691028,
+      "version": 376,
+      "versionNonce": 1484906476,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1773839385278,
+      "link": null,
+      "locked": false,
+      "text": "Design Rate limiter \nProblem : Attacker sends lot of unwanted request to server, because of the limited resource of the server, it goes down.\nThis affects genuine users.\nThat is why we bring rate limiters.\n\nDifferent algorithm for rate limiters :\n1) Token Bucket \n2) Leaking bucket \n3) Fixed window\n4) Sliding window log\n5) Sliding window counter",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 268,
+      "containerId": null,
+      "originalText": "Design Rate limiter \nProblem : Attacker sends lot of unwanted request to server, because of the limited resource of the server, it goes down.\nThis affects genuine users.\nThat is why we bring rate limiters.\n\nDifferent algorithm for rate limiters :\n1) Token Bucket \n2) Leaking bucket \n3) Fixed window\n4) Sliding window log\n5) Sliding window counter",
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
