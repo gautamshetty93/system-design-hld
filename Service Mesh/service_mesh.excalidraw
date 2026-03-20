@@ -1,0 +1,48 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw-jetbrains-plugin",
+  "elements": [
+    {
+      "id": "ZotyrIM2A5NfzvbUUJPwB",
+      "type": "text",
+      "x": 249,
+      "y": 117,
+      "width": 1255.3990478515625,
+      "height": 825,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 1967326767,
+      "version": 1552,
+      "versionNonce": 1032070671,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1774032438348,
+      "link": null,
+      "locked": false,
+      "text": "Way how 2 different microservices communicate:\nExample microservice A wants to communicate with microservice B\n\n1) Service discovery capability :\n- Microservice A wants to communicate with Microservice B. Then it needs its location(IP address and Port number)\n- Service discovery functionality is required so that Microservice A can get the location of microservice B different instances.\n\nScenario 1 : Service discovery returns all the Microservice B instance location.\nScenario 2: service discovery returns address of load balancer of Micro service B location.\n\n2) Load balancing capability.\nBased on both the scenarios we need to decide load balancer which will be client side.\n\n3) Authorization & Authentication\nWe need to authorize and authenticate between each even though they are internal.\n\n4) Circuit breaker capability :\nWe can control failures to some specific micro service.\n\n5) Re-try capability\nIf request to some micro services fails then some issue can be retryable.\n\n6) Deployment strategy\nDifferent strategies are like Canary, Red-black, Blue-Green etc.\n\n7) Telemetry capability\nWe need capability to collect data which will help in analysis and monitoring of a component.\n\n\nInstead of all these we have Service Mesh.\nWe have sidecar proxy which is present with the pod and has all these capabilities. It can be controlled by control panel.\n\n",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 818,
+      "containerId": null,
+      "originalText": "Way how 2 different microservices communicate:\nExample microservice A wants to communicate with microservice B\n\n1) Service discovery capability :\n- Microservice A wants to communicate with Microservice B. Then it needs its location(IP address and Port number)\n- Service discovery functionality is required so that Microservice A can get the location of microservice B different instances.\n\nScenario 1 : Service discovery returns all the Microservice B instance location.\nScenario 2: service discovery returns address of load balancer of Micro service B location.\n\n2) Load balancing capability.\nBased on both the scenarios we need to decide load balancer which will be client side.\n\n3) Authorization & Authentication\nWe need to authorize and authenticate between each even though they are internal.\n\n4) Circuit breaker capability :\nWe can control failures to some specific micro service.\n\n5) Re-try capability\nIf request to some micro services fails then some issue can be retryable.\n\n6) Deployment strategy\nDifferent strategies are like Canary, Red-black, Blue-Green etc.\n\n7) Telemetry capability\nWe need capability to collect data which will help in analysis and monitoring of a component.\n\n\nInstead of all these we have Service Mesh.\nWe have sidecar proxy which is present with the pod and has all these capabilities. It can be controlled by control panel.\n\n",
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
